@@ -40,7 +40,7 @@ export const CartProvider = ({ children }) => {
 
   const clearCart = () => setCartItems([]);
 
-  // ✅ FIX: item.price is a number, so no .slice
+  
   const totalPrice = cartItems.reduce(
     (total, item) => total + item.quantity * item.price,
     0
