@@ -7,7 +7,7 @@ export function Cart() {
 
   const handleOrderNow = () => {
     alert("Thank you for your order!");
-    clearCart(); // Clear cart after ordering
+    clearCart();
   };
 
   return (
