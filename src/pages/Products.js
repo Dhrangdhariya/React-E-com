@@ -63,7 +63,7 @@ const mockProducts = [
 const categories = ["All", "Electronics", "Fitness", "Lifestyle"];
 
 export function Products() {
-  const { addToCart } = useCart(); // From your CartContext
+  const { addToCart } = useCart(); 
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredProducts =
@@ -77,7 +77,7 @@ export function Products() {
     <div className="page-content">
       <h2 className="products-title">All Products</h2>
 
-      {/* Category Buttons */}
+     
       <div style={{ display: "flex", gap: "1rem", marginBottom: "1.5rem", marginLeft: "1.5rem" }}>
         {categories.map((cat) => (
           <button
@@ -91,7 +91,7 @@ export function Products() {
         ))}
       </div>
 
-      {/* Products */}
+
       <div className="products-grid">
         {filteredProducts.map((product) => (
           <div key={product.id} className="product-card">
